@@ -51,7 +51,7 @@ RazorEngineCompiledTemplate template2 = RazorEngineCompiledTemplate.LoadFromStre
 #### Simplest thread safe caching pattern
 
 ```cs
-private static ConcurrentDictionary<string, RazorEngineCompiledTemplate> TemplateCache = new ConcurrentDictionary<string, RazorEngineCompiledTemplate>();
+private static ConcurrentDictionary<int, RazorEngineCompiledTemplate> TemplateCache = new ConcurrentDictionary<int, RazorEngineCompiledTemplate>();
 ```
 
 ```cs
